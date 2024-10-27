@@ -1,6 +1,6 @@
-package com.yagoferreira.tools.repository;
+package com.yagoferreira.tools.infra.repository;
 
-import com.yagoferreira.tools.entity.Tools;
+import com.yagoferreira.tools.infra.entity.Tools;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

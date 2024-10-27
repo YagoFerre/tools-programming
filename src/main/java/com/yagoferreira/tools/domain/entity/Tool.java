@@ -1,31 +1,19 @@
-package com.yagoferreira.tools.entity;
-
-import jakarta.persistence.*;
+package com.yagoferreira.tools.domain.entity;
 
 import java.util.List;
 
-@Entity
-public class Tools {
+public class Tool {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String title;
-
     private String link;
-
     private String description;
-
-    @ElementCollection
-    @CollectionTable(name = "tags", joinColumns = @JoinColumn(name = "tools_id"))
-    @Column(name = "tag")
     private List<String> tags;
 
-    public Tools() {
+    public Tool() {
     }
 
-    public Tools(Long id, String title, String link, String description, List<String> tags) {
+    public Tool(Long id, String title, String link, String description, List<String> tags) {
         this.id = id;
         this.title = title;
         this.link = link;

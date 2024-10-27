@@ -1,7 +1,7 @@
 package com.yagoferreira.tools.service;
 
-import com.yagoferreira.tools.entity.Tools;
-import com.yagoferreira.tools.repository.ToolsRepository;
+import com.yagoferreira.tools.infra.entity.Tools;
+import com.yagoferreira.tools.infra.repository.ToolsRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
