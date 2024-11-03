@@ -1,9 +1,11 @@
 package com.yagoferreira.tools.application.gateways;
 
 import com.yagoferreira.tools.domain.entity.Tool;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface ToolsGateway {
     Tool create(Tool tool);
     List<Tool> list();

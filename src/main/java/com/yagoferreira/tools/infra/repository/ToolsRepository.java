@@ -1,12 +1,14 @@
 package com.yagoferreira.tools.infra.repository;
 
-import com.yagoferreira.tools.infra.entity.Tools;
+import com.yagoferreira.tools.infra.entity.ToolEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface ToolsRepository extends JpaRepository<Tools, Long> {
+@Repository
+public interface ToolsRepository extends JpaRepository<ToolEntity, Long> {
 
-    List<Tools> findByTagsContaining(String tag);
+    List<ToolEntity> findByTagsContaining(String tag);
 
 }
